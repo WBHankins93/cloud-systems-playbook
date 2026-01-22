@@ -12,6 +12,59 @@ If any other document conflicts with this one, this document wins.
 
 ---
 
+## Quality Bar (Non-Negotiable)
+
+This ecosystem is curated, not exhaustive.
+
+Content is included only if it clearly demonstrates **senior cloud engineering judgment**.
+Correctness alone is insufficient.
+
+Every artifact added to this repository must clearly answer
+at least one of the following questions:
+
+1. What constraint shaped this decision?
+2. What tradeoff was consciously accepted?
+3. What failure was anticipated or learned from?
+4. What alternative was rejected, and why?
+5. What would be done differently with more information or time?
+
+If an artifact cannot answer at least one of these questions,
+it does not belong in this ecosystem.
+
+Removal of content that does not meet this bar is considered
+maintenance, not regression.
+
+---
+
+## Quality Calibration References
+
+The quality, tone, and depth of this ecosystem are intentionally aligned with
+the following existing repositories, which serve as calibration anchors.
+
+These repositories define the minimum acceptable standard for clarity,
+judgment, and production realism.
+
+- **Solutions Playbook**  
+  https://github.com/WBHankins93/solutions-playbook  
+  Reference for problem framing, decision clarity, stakeholder communication,
+  and senior-level explanation.
+
+- **Implementation Studio**  
+  https://github.com/WBHankins93/implementation-studio  
+  Reference for production realism, constrained environments, and
+  execution under real-world limitations.
+
+- **DevOps Studio**  
+  https://github.com/WBHankins93/devops-studio  
+  Reference for breadth of modern infrastructure patterns, technical rigor,
+  and end-to-end platform implementations.
+
+New content added to this ecosystem should feel consistent with the standard
+established by these repositories. If it would feel out of place in them,
+it likely does not meet the quality bar.
+
+---
+
 ## 1. Purpose
 
 This ecosystem exists to codify and demonstrate **senior cloud engineering judgment**.
