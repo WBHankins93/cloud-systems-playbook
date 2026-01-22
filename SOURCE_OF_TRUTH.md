@@ -78,6 +78,8 @@ Senior cloud engineering is defined by:
 - Decision-making over time
 - Tradeoffs explained with rigor
 - Systems that survive failure, change, and growth
+- Integration of probabilistic systems (AI) into deterministic platforms
+- Clear boundaries between automated judgment and human responsibility
 
 This ecosystem encodes those realities explicitly.
 
@@ -152,6 +154,39 @@ All frameworks, checklists, and artifacts in the Flagship repository are express
 
 ---
 
+### 4.1 AI as a System Capability
+
+AI is a first-class concern in senior cloud engineering, but it is **subordinate to platform judgment**.
+
+**AI is a probabilistic dependency**:
+- AI systems introduce non-deterministic behavior into deterministic platforms
+- AI outputs require validation, not blind trust
+- AI failures must be handled gracefully, not catastrophically
+
+**AI is a reliability, security, and cost risk**:
+- AI systems can fail in novel ways (hallucination, drift, prompt injection)
+- AI systems consume significant compute resources
+- AI systems require monitoring and observability distinct from traditional systems
+
+**AI requires ADRs**:
+- Every AI integration decision must be documented with rationale
+- AI alternatives must be evaluated (build vs. buy vs. API)
+- AI tradeoffs must be explicit (cost, latency, accuracy, reliability)
+
+**AI must be observable, bounded, and evaluated**:
+- AI decisions must be logged and auditable
+- AI capabilities must have clear boundaries (what it can and cannot do)
+- AI performance must be measured against defined success criteria
+
+**AI is never a trusted authority**:
+- AI outputs are inputs to human judgment, not replacements for it
+- AI cannot make decisions that affect compliance, security, or financial outcomes without human oversight
+- AI is a tool that augments human capability, not a system that replaces human responsibility
+
+This governance ensures AI is integrated with the same rigor as any other system component.
+
+---
+
 ## 5. Responsibilities of the Flagship Repository
 
 The Flagship repository owns:
@@ -165,6 +200,7 @@ The Flagship repository owns:
 - Reliability practices (SLOs, SLIs, runbooks, postmortems)
 - Security model and controls
 - Cost awareness and sustainability
+- AI system boundaries, contracts, and failure modes
 - Narrative over time (iteration, refactor, failure, improvement)
 
 It may include:
@@ -200,6 +236,11 @@ cloud-systems-playbook/
 
 
 This structure reflects how senior engineers reason about systems.
+
+AI-related considerations are documented within these domains,
+where they affect system behavior, risk, and outcomes.
+AI is not a separate concern—it is integrated into architecture,
+reliability, security, and cost decisions.
 
 ---
 
@@ -277,6 +318,7 @@ This ecosystem is successful when:
 - A hiring manager understands senior judgment in 15 minutes
 - A staff or principal interviewer can go deep for an hour
 - This system remains useful as a professional reference for years
+- AI decisions are clearly bounded, evaluated, and justified
 
 This is not interview prep.  
 It is professional signal.
