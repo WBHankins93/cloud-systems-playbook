@@ -145,6 +145,7 @@ cloud-systems-playbook/
 ├── 07-cost/
 ```
 
+
 This structure reflects how senior engineers reason about systems.
 
 ---
